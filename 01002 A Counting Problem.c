@@ -13,7 +13,7 @@ int main ()
     {
         if( sch [i] == fnd [0] )
             for( j = i; j < i + fdl; j++ )
-                if( sch[j] == fnd [t++]);
+                if( sch [j] == fnd [t++]);
         if( t == fdl && cnt++ );
     }
     printf( "%d\n", cnt );
