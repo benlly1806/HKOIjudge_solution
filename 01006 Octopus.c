@@ -1,17 +1,16 @@
 #include<stdio.h>
-#include<math.h>
 
-int main()
+int main ()
 {
-    int i,n,money,times=0,spend;
-    scanf("%d%d",&money,&n);
-    while(n-->0)
+    int i, n, money, times = 0, spend;
+    scanf ("%d%d", &money, &n);
+    while (n-- > 0)
     {
-        scanf("%d",&spend);
-        money-=spend;
-        if(money<=0&&++times)
-        	money+=250;
+        scanf ("%d", &spend);
+        money -= spend;
+        if (money <= 0 && ++times)
+        	money += 250;
     }
-    printf("$%d\n",250*times);
+    printf ("$%d\n", 250 * times);
     return 0;
 }
